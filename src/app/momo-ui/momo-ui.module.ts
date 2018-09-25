@@ -5,5 +5,6 @@ import { ExpanderComponent } from './components/expander/expander.component';
 @NgModule({
   imports: [CommonModule],
   declarations: [ExpanderComponent],
+  export: [ExpanderComponent],
 })
 export class MomoUiModule {}
