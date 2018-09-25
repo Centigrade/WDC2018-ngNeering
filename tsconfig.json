@@ -18,7 +18,7 @@
     ],
     "paths": {
       "momo-ui": [
-        "dist/momo-ui"
+        "projects/momo-ui/src/public_api.ts",
       ]
     }
   }
