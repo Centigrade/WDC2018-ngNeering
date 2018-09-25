@@ -1,12 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'momo-expander',
   templateUrl: './expander.component.html',
   styleUrls: ['./expander.component.scss'],
 })
-export class ExpanderComponent implements OnInit {
-  constructor() {}
+export class ExpanderComponent {
+  @Input()
+  title: string;
 
-  ngOnInit() {}
+  @Input()
+  icon: string;
+
+  public expanded = false;
+
+  public toggle() {
+    this.expanded = !this.expanded;
+  }
 }
