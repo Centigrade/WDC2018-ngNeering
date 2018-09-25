@@ -12,6 +12,9 @@ export class ExpanderComponent {
   @Input()
   icon: string;
 
+  @Input()
+  disabled = false;
+
   public expanded = false;
 
   public toggle() {
