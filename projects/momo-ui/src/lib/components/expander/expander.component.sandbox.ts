@@ -19,7 +19,7 @@ export default sandboxOf(ExpanderComponent)
     template: `
     <momo-expander
         title="Am am disabled"
-        [disabled]="false"
+        [disabled]="true"
         icon="../assets/icons/Time.svg">
         <ul>
           <li>Montag 00:28</li>

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, HostBinding, Input } from '@angular/core';
 
 @Component({
   selector: 'momo-expander',
@@ -13,6 +13,7 @@ export class ExpanderComponent {
   icon: string;
 
   @Input()
+  @HostBinding('class.disabled')
   disabled = false;
 
   public expanded = false;

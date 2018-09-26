@@ -11,6 +11,7 @@ $width_content-tip: 20px;
   display: flex;
   flex-direction: column;
   font-family: $font-family_regular;
+  user-select: none;
 }
 
 .header {
@@ -20,12 +21,19 @@ $width_content-tip: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: $background;
-  color: $foreground;
+  background: $background_highlight;
+  color: $foreground_dark-background;
   border-radius: $border-radius_expander;
 
   &:hover {
     cursor: pointer;
+  }
+
+  :host.disabled>& {
+    cursor: default;
+    background: transparent;
+    border: $border-thickness_expander solid $border;
+    color: $foreground_light-background;
   }
 }
 
@@ -33,12 +41,21 @@ $width_content-tip: 20px;
   text-transform: uppercase;
   font-size: 1em;
   margin-left: auto;
+
+  :host.disabled>.header>& {
+    opacity: $opacity_disabled;
+  }
 }
 
 .icon {
   height: $icon-size;
   width: $icon-size;
-  background: $foreground;
+  background: $foreground_dark-background;
+
+  :host.disabled>.header>& {
+    background: $foreground_light-background;
+    opacity: $opacity_disabled;
+  }
 }
 
 .content {
