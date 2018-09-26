@@ -1,10 +1,12 @@
 <div class="header"
      (click)="toggle()">
-  <img class="icon"
-       [src]="icon">
+  <div class="icon"
+       *ngIf="icon !== undefined"
+       [style.-webkit-mask]="'url(' + icon + ')'"></div>
   <h1 class="title">{{ title }}</h1>
 </div>
 <div class="content"
-     *ngIf="expanded">
+     *ngIf="true || expanded">
+  <div class="content-tip"></div>
   <ng-content></ng-content>
 </div>

@@ -1,9 +1,77 @@
+$foreground: #fff;
+$background: linear-gradient(45deg, #2b307c, #a72574);
+$border: #dddfe1;
+$icon-size: 24px;
+$font-family_regular: 'Roboto Condensed';
+$font-family_bold: 'Roboto Condensed Bold';
+$padding: 15px;
+$border-thickness: 1px;
+$height_content-tip: 12px;
+$width_content-tip: 20px;
+
+@mixin rectangle($height, $width, $fill) {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 $width/2 $height $width/2;
+  border-color: transparent transparent $fill transparent;
+}
+
 :host {
+  width: 260px;
   display: flex;
   flex-direction: column;
+  font-family: $font-family_regular;
 }
 
 .header {
+  box-sizing: border-box;
+  height: 50px;
+  padding: $padding;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  background: $background;
+  color: $foreground;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-left: auto;
+}
+
+.icon {
+  height: $icon-size;
+  width: $icon-size;
+  background: $foreground;
+}
+
+.content {
+  position: relative;
+  margin-top: 25px;
+  border: $border-thickness solid $border;
+  border-radius: 5px;
+}
+
+.content-tip {
+  @include rectangle($height_content-tip, $width_content-tip, $border);
+
+  position: relative;
+  margin-top: -$height_content-tip;
+  left: $padding;
+
+  &::after {
+    @include rectangle($height_content-tip, $width_content-tip, white);
+
+    content: '';
+    position: absolute;
+    top: $border-thickness * 2;
+    left: -($width_content-tip / 2);
+  }
 }
