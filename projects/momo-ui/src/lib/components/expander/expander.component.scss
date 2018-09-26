@@ -21,8 +21,8 @@ $width_content-tip: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: $background_highlight;
-  color: $foreground_dark-background;
+  background: $brush_background_highlight;
+  color: $brush_foreground_dark-background;
   border-radius: $border-radius_expander;
 
   &:hover {
@@ -32,8 +32,8 @@ $width_content-tip: 20px;
   :host.disabled>& {
     cursor: default;
     background: transparent;
-    border: $border-thickness_expander solid $border;
-    color: $foreground_light-background;
+    border: $border-thickness_expander solid $brush_border;
+    color: $brush_foreground_light-background;
   }
 }
 
@@ -50,10 +50,10 @@ $width_content-tip: 20px;
 .icon {
   height: $icon-size;
   width: $icon-size;
-  background: $foreground_dark-background;
+  background: $brush_foreground_dark-background;
 
   :host.disabled>.header>& {
-    background: $foreground_light-background;
+    background: $brush_foreground_light-background;
     opacity: $opacity_disabled;
   }
 }
@@ -61,12 +61,12 @@ $width_content-tip: 20px;
 .content {
   position: relative;
   margin-top: 25px;
-  border: $border-thickness_expander solid $border;
+  border: $border-thickness_expander solid $brush_border;
   border-radius: 5px;
 }
 
 .content-tip {
-  @include rectangle($height_content-tip, $width_content-tip, $border);
+  @include rectangle($height_content-tip, $width_content-tip, $brush_border);
 
   position: relative;
   margin-top: -$height_content-tip;
