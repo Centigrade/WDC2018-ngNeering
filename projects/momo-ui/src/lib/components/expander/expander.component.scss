@@ -48,8 +48,8 @@ $width_content-tip: 20px;
 }
 
 .icon {
-  height: $icon-size;
-  width: $icon-size;
+  height: $size_icon;
+  width: $size_icon;
   background: $brush_foreground_dark-background;
 
   :host.disabled>.header>& {
