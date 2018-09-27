@@ -5,11 +5,13 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "jest",
+    "test:lib": "jest --config ./jest.lib.config.js",
+    "test:app": "jest --config ./jest.app.config.js",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "playground": "angular-playground",
-    "test:watch": "jest --watch"
+    "test:lib:watch": "jest --config ./jest.lib.config.js --watch",
+    "test:app:watch": "jest --config ./jest.app.config.js --watch"
   },
   "private": true,
   "dependencies": {

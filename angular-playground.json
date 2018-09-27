@@ -1,6 +1,6 @@
 {
   "sourceRoot": "./projects/momo-ui/src",
   "angularCli": {
-    "appName": "playground"
+    "appName": "momo"
   }
 }
