@@ -1,5 +1,4 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ExpanderComponent } from './expander.component';
 
 describe('ExpanderComponent', () => {
@@ -8,9 +7,8 @@ describe('ExpanderComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ExpanderComponent ]
-    })
-    .compileComponents();
+      declarations: [ExpanderComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
