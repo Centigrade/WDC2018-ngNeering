@@ -62,7 +62,7 @@ $width_content-tip: 20px;
   position: relative;
   margin-top: 25px;
   border: $border-thickness_expander solid $brush_border;
-  border-radius: 5px;
+  border-radius: $border-radius_expander;
 }
 
 .content-tip {
@@ -73,7 +73,7 @@ $width_content-tip: 20px;
   left: $padding_header;
 
   &::after {
-    @include rectangle($height_content-tip, $width_content-tip, white);
+    @include rectangle($height_content-tip, $width_content-tip, $brush_background_light);
 
     content: '';
     position: absolute;
