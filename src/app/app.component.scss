@@ -1,1 +1,10 @@
+:host {
+  display: flex;
+  flex-direction: row;
+}
 
+button {
+  margin: 15px;
+  height: 40px;
+  align-self: flex-start;
+}

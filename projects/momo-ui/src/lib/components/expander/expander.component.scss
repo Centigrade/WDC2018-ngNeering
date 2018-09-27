@@ -22,7 +22,7 @@ $width_content-tip: 20px;
   flex-direction: row;
   align-items: center;
   background: $brush_background_highlight;
-  color: $brush_foreground_dark-background;
+  color: $brush_foreground_highlight;
   border-radius: $border-radius_expander;
 
   &:hover {
@@ -50,7 +50,7 @@ $width_content-tip: 20px;
 .icon {
   height: $size_icon;
   width: $size_icon;
-  background: $brush_foreground_dark-background;
+  background: $brush_foreground_highlight;
 
   :host.disabled>.header>& {
     background: $brush_foreground_light-background;
@@ -63,6 +63,8 @@ $width_content-tip: 20px;
   margin-top: 25px;
   border: $border-thickness_expander solid $brush_border;
   border-radius: $border-radius_expander;
+  color: $brush_foreground_dark-background;
+  background: $brush_background_light;
 }
 
 .content-tip {
