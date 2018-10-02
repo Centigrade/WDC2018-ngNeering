@@ -1,15 +1,13 @@
 import { Injector, NgModule } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
 import { BrowserModule } from '@angular/platform-browser';
-import { ExpanderComponent, MomoUiModule } from 'dist/momo-ui/momo-ui';
+import { ExpanderComponent, MomoUiModule } from 'momo-ui';
 import { AppComponent } from './app.component';
 
 @NgModule({
   imports: [BrowserModule, MomoUiModule],
   declarations: [AppComponent],
-  providers: [],
-  bootstrap: [],
-  entryComponents: [AppComponent],
+  entryComponents: [ExpanderComponent],
 })
 export class AppModule {
   constructor(private injector: Injector) {}
