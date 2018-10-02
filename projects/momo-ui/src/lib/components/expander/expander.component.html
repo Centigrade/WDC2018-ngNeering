@@ -8,5 +8,5 @@
 <div class="content"
      *ngIf="expanded">
   <div class="content-tip"></div>
-  <ng-content></ng-content>
+  <div [innerHTML]="htmlContent"></div>
 </div>

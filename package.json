@@ -12,7 +12,8 @@
     "playground": "angular-playground",
     "test:lib:watch": "jest --config ./jest.lib.config.js --watch",
     "test:app:watch": "jest --config ./jest.app.config.js --watch",
-    "build:element": "ng build --prod --extraWebpackConfig webpack.extra.js --output-hashing none"
+    "build:element": "ng build --prod --extraWebpackConfig webpack.extra.js --output-hashing none",
+    "deploy:element": "npm run build:element && cpr dist/momo/main.js deploy/momo-expander.bundle.js -o"
   },
   "private": true,
   "dependencies": {
@@ -29,6 +30,7 @@
     "@webcomponents/custom-elements": "^1.2.1",
     "core-js": "^2.5.4",
     "document-register-element": "^1.7.2",
+    "elements-zone-strategy": "^6.0.4",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },
@@ -43,6 +45,7 @@
     "@types/node": "~8.9.4",
     "angular-playground": "^5.0.0",
     "codelyzer": "~4.2.1",
+    "cpr": "^3.0.1",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "jest": "23.6.0",
