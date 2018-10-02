@@ -4,7 +4,7 @@
       lang="en-US"
       prefix="og: http://ogp.me/ns#"
       data-whatinput="keyboard"
-      data-whatintent="keyboard"
+      data-whatintent="mouse"
       style="margin-top: 58px;">
 <!--<![endif]-->
 
@@ -627,20 +627,20 @@
       }
     }
 
-    body.g-bfo3de {
+    body.g-441aj0 {
       overflow: hidden !important
     }
 
-    html.g-cl91y0,
-    html.g-cl91y0>body {
+    html.g-b0u8cm,
+    html.g-b0u8cm>body {
       overflow: hidden !important
     }
 
-    .gkln2i0 {
+    .g-z5no06 {
       cursor: pointer
     }
 
-    body.g-miks0d:before {
+    body.g42k5r:before {
       transition: height .5s cubic-bezier(.455, .03, .515, .955);
       content: ' ';
       display: block;
@@ -650,15 +650,15 @@
       margin: 0
     }
 
-    .gfp16k2.g-miks0d:before {
+    .gqjt3e8.g42k5r:before {
       transition: none !important
     }
 
-    body.g-miks0d.g-8iwm6:before {
+    body.g42k5r.g34fiww:before {
       height: 42px !important
     }
 
-    body.g-miks0d.g-ntvu5r:before {
+    body.g42k5r.gw5dbox:before {
       transition: none !important
     }
 
@@ -667,8 +667,8 @@
       vertical-align: inherit
     }
 
-    .g6mj4k1,
-    .ghqyrje {
+    .g-cp0f67,
+    .gqm6y9k {
       animation-name: gscw-highlight !important;
       animation-duration: .6s !important;
       -webkit-font-smoothing: subpixel-antialiased;
@@ -676,7 +676,7 @@
       transform-origin: left
     }
 
-    .gha31o9 {
+    .g-se1ut3 {
       position: absolute;
       top: -9999px;
       width: 50px;
@@ -684,7 +684,7 @@
       overflow: scroll
     }
 
-    .g-ntvu5r * {
+    .gw5dbox * {
       transition: none !important
     }
 
@@ -692,6 +692,38 @@
 </head>
 
 <body class="page-template page-template-page-datacenter page-template-page-datacenter-php page page-id-172 preload antialiased">
+
+  </style>
+  <!-- Polyfills for Browsers supporting
+        Custom Elements. Needed b/c we downlevel
+        to ES5. See: @webcomponents/custom-elements
+    -->
+  <script src="../node_modules/@webcomponents/custom-elements/src/native-shim.js"></script>
+
+  <!-- Polyfills for Browsers not supporting
+        Custom Elements. See: @webcomponents/custom-elements
+    -->
+  <script src="../node_modules/@webcomponents/custom-elements/custom-elements.min.js"></script>
+
+  <!-- Zone.js -->
+  <!--
+    Consider excluding zone.js when creating
+    Custom Elements by using the noop zone.
+    -->
+  <script src="../node_modules/zone.js/dist/zone.js"></script>
+
+  <!-- Rx -->
+  <script src="../node_modules/rxjs/bundles/rxjs.umd.js"></script>
+
+  <!-- Angular Packages -->
+  <script src="../node_modules/@angular/core/bundles/core.umd.js"></script>
+  <script src="../node_modules/@angular/common/bundles/common.umd.js"></script>
+  <script src="../node_modules/@angular/platform-browser/bundles/platform-browser.umd.js"></script>
+  <script src="../node_modules/@angular/elements/bundles/elements.umd.js"></script>
+
+  <!-- Custom Element -->
+  <script src="./momo-expander.bundle.js"></script>
+
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPMHXCF"
             height="0"
@@ -704,11 +736,11 @@
          class="sticky-container"
          style="height: 106px;">
       <div class="sticky header-container is-at-top is-stuck"
-           data-sticky="awr91s-sticky"
+           data-sticky="8naqmb-sticky"
            data-margin-top="0"
            data-sticky-on="small"
            data-anchor-height-indicator=""
-           data-resize="t4bez4-sticky"
+           data-resize="uwbnnj-sticky"
            style="max-width: 1905px; margin-top: 0em; bottom: auto; top: 0px;"
            data-events="resize">
 
@@ -816,8 +848,8 @@
                   data-auto-height="true"
                   data-parent-link="true"
                   role="menubar"
-                  data-dropdown-menu="khtciq-dropdown-menu"
-                  data-mutate="dm1rfp-responsive-menu">
+                  data-dropdown-menu="a334a9-dropdown-menu"
+                  data-mutate="euqi4z-responsive-menu">
                 <li id="menu-item-196"
                     class="menu-item menu-item-main-menu menu-item-anmeldung"
                     role="menuitem"><a href="https://www.eventbrite.com/e/wdc-web-developer-conference-2018-tickets-39690694937?aff=webseite">Anmeldung</a></li>
@@ -952,11 +984,23 @@
                 </ul>
               </div>
             </div>
-            <p class="bt-lead">David Würfel studierte Informatik an der Universität Trier und spezialisierte sich dort im Bereich Software Engineering. Seine Masterarbeit schrieb er über den Einsatz interaktiver Miniaturvisualisierungen beim Debuggen und schloss sein Studium 2014 mit Auszeichnung als Jahrgangsbester ab. Seither setzt er seine Kenntnisse bei Centigrade gewinnbringend ein, um visuell wie auch technisch hochwertige, ansprechende User Interfaces zu entwickeln. Sein besonderes Interesse gilt dabei Software Architekturen, wie z.B. dem MVVM-Pattern, und der Einhaltung von Clean Code Prinzipien. Hat David zunächst in .NET und der WPF Entwicklung mit C# und XAML bei mehreren Projekten erfolgreich mitgewirkt, so begleitet er mittlerweile auch Projekte zu Webanwendungen in Angular. Seine Kenntnisse teilt David Würfel nicht nur gerne intern, sondern auch als Workshop-Leiter in Unternehmen oder als Sprecher auf bekannten Fachkonferenzen.
 
-              ---
+            <!-- Theming via CSS variables. -->
+            <d class="bt-lead"
+               style="--brush-bg-highlight: #7fb61a;">
 
-              David Würfel studied Computer Science at the University of Trier and specialized in software engineering. His master thesis was about the usage of interactive small-scale visualizations for software debugging. He completed his master’s degree program with distinction as top of his class. Since then David uses this knowledge profitably at Centigrade to create appealing user interfaces of very high quality. He is particularly interested in software architectures, such as the MVVM pattern, and in ensuring clean code standards. David has successfully contributed in several .NET and WPF projects developing with C# and XAML and recently also takes part in projects building web applications in Angular. Not only does David Würfel like to share his skills internally, but he also leads workshops in companies and is an active speaker on well-known expert conferences.</p>
+              <!-- Usage of Elements. -->
+              <momo-expander title="Bio (Deutsch)"
+                             style="width: 100%"
+                             icon="./history.svg"
+                             content="<div style='padding: 10px'>David Würfel studierte Informatik an der Universität Trier und spezialisierte sich dort im Bereich Software Engineering. Seine Masterarbeit schrieb er über den Einsatz interaktiver Miniaturvisualisierungen beim Debuggen und schloss sein Studium 2014 mit Auszeichnung als Jahrgangsbester ab. Seither setzt er seine Kenntnisse bei Centigrade gewinnbringend ein, um visuell wie auch technisch hochwertige, ansprechende User Interfaces zu entwickeln. Sein besonderes Interesse gilt dabei Software Architekturen, wie z.B. dem MVVM-Pattern, und der Einhaltung von Clean Code Prinzipien. Hat David zunächst in .NET und der WPF Entwicklung mit C# und XAML bei mehreren Projekten erfolgreich mitgewirkt, so begleitet er mittlerweile auch Projekte zu Webanwendungen in Angular. Seine Kenntnisse teilt David Würfel nicht nur gerne intern, sondern auch als Workshop-Leiter in Unternehmen oder als Sprecher auf bekannten Fachkonferenzen.</div>"></momo-expander>
+              <br />
+              <momo-expander title="Bio (Englisch)"
+                             style="width: 100%"
+                             icon="./history.svg"
+                             content="<div style='padding: 10px'>David Würfel studied Computer Science at the University of Trier and specialized in software engineering. His master thesis was about the usage of interactive small-scale visualizations for software debugging. He completed his master’s degree program with distinction as top of his class. Since then David uses this knowledge profitably at Centigrade to create appealing user interfaces of very high quality. He is particularly interested in software architectures, such as the MVVM pattern, and in ensuring clean code standards. David has successfully contributed in several .NET and WPF projects developing with C# and XAML and recently also takes part in projects building web applications in Angular. Not only does David Würfel like to share his skills internally, but he also leads workshops in companies and is an active speaker on well-known expert conferences.</div>"></momo-expander>
+
+              </p>
           </section>
           <section class="bf-xlarge-10 bf-columns bf-small-centered">
             <hr class="a-divider a-divider--size-medium">
@@ -1219,18 +1263,6 @@
   </script>
   <script type="text/javascript"
           src="./Speaker _ WDC_files/vue_with_router.e7a24fec.js.Download"></script>
-  <script type="text/javascript"
-          id="">
-    (function (c, d, e, f, g, a, b) {
-      c[e] = c[e] || [];
-      a = d.createElement(f);
-      a.async = 1;
-      a.src = g;
-      b = d.getElementsByTagName(f)[0];
-      b.parentNode.insertBefore(a, b)
-    })(window, document, "_gscq", "script", "//widgets.getsitecontrol.com/64767/script.js");
-
-  </script>
   <script type="text/javascript">
     /* <![CDATA[ */
     var sc_settings = {
@@ -15767,6 +15799,18 @@
 
   </script>
   <script type="text/javascript"
+          id="">
+    (function (c, d, e, f, g, a, b) {
+      c[e] = c[e] || [];
+      a = d.createElement(f);
+      a.async = 1;
+      a.src = g;
+      b = d.getElementsByTagName(f)[0];
+      b.parentNode.insertBefore(a, b)
+    })(window, document, "_gscq", "script", "//widgets.getsitecontrol.com/64767/script.js");
+
+  </script>
+  <script type="text/javascript"
           src="./Speaker _ WDC_files/plugin-nmg-spc-client-public-speaker.7cc525ab.js.Download"></script>
   <script type="text/javascript"
           src="./Speaker _ WDC_files/app.min.js.Download"></script>
@@ -15808,22 +15852,22 @@
   </div><!-- #catapult-cookie-bar -->
 
 
-  <w-div id="g-o5fafn"
-         class="gtraxlo g-p9kqlo"
+  <w-div id="g-p56twr"
+         class="g-hpkvu g-g0j99u"
          style="margin-top: -71px;">
-    <w-div id="g-2rg6lt"
-           class="g5q9amw g-vt2arj g-sels6t"
+    <w-div id="g-apfd59"
+           class="gsiq03u g-9co2rj g-mzn615"
            style="visibility: visible; display: block;">
       <style media="print"
              type="text/css">
-        #g-2rg6lt {
+        #g-apfd59 {
           display: none !important
         }
 
       </style>
       <style media="handheld,screen,projection,tv"
              type="text/css">
-        #g-2rg6lt {
+        #g-apfd59 {
           margin: 0;
           padding: 0;
           border: 0;
@@ -15846,22 +15890,22 @@
           filter: none
         }
 
-        #g-2rg6lt a,
-        #g-2rg6lt b,
-        #g-2rg6lt div,
-        #g-2rg6lt em,
-        #g-2rg6lt form,
-        #g-2rg6lt h1,
-        #g-2rg6lt i,
-        #g-2rg6lt img,
-        #g-2rg6lt label,
-        #g-2rg6lt li,
-        #g-2rg6lt ol,
-        #g-2rg6lt p,
-        #g-2rg6lt span,
-        #g-2rg6lt strong,
-        #g-2rg6lt u,
-        #g-2rg6lt ul {
+        #g-apfd59 a,
+        #g-apfd59 b,
+        #g-apfd59 div,
+        #g-apfd59 em,
+        #g-apfd59 form,
+        #g-apfd59 h1,
+        #g-apfd59 i,
+        #g-apfd59 img,
+        #g-apfd59 label,
+        #g-apfd59 li,
+        #g-apfd59 ol,
+        #g-apfd59 p,
+        #g-apfd59 span,
+        #g-apfd59 strong,
+        #g-apfd59 u,
+        #g-apfd59 ul {
           margin: 0;
           padding: 0;
           border: 0;
@@ -15892,59 +15936,59 @@
           -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
         }
 
-        #g-2rg6lt a,
-        #g-2rg6lt a:active,
-        #g-2rg6lt a:focus {
+        #g-apfd59 a,
+        #g-apfd59 a:active,
+        #g-apfd59 a:focus {
           -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
           text-decoration: none
         }
 
-        #g-2rg6lt img {
+        #g-apfd59 img {
           display: block
         }
 
-        #g-2rg6lt .g-pj0war {
+        #g-apfd59 .g-dqcohn {
           vertical-align: baseline;
           line-height: 1.35
         }
 
-        #g-2rg6lt .g-pj0war b,
-        #g-2rg6lt .g-pj0war strong {
+        #g-apfd59 .g-dqcohn b,
+        #g-apfd59 .g-dqcohn strong {
           font-weight: 700
         }
 
-        #g-2rg6lt .g-pj0war em,
-        #g-2rg6lt .g-pj0war i {
+        #g-apfd59 .g-dqcohn em,
+        #g-apfd59 .g-dqcohn i {
           font-style: italic
         }
 
-        #g-2rg6lt .g-pj0war u {
+        #g-apfd59 .g-dqcohn u {
           text-decoration: underline
         }
 
-        #g-2rg6lt .g-pj0war p {
+        #g-apfd59 .g-dqcohn p {
           margin: 0 0 10px 0
         }
 
-        #g-2rg6lt .g-pj0war a {
+        #g-apfd59 .g-dqcohn a {
           text-decoration: underline
         }
 
-        #g-2rg6lt .g-pj0war.gfe7ogh {
+        #g-apfd59 .g-dqcohn.gcsj88h {
           display: inline;
           white-space: nowrap;
           margin: 0;
           padding: 0
         }
 
-        #g-2rg6lt .g-pj0war.gfe7ogh * {
+        #g-apfd59 .g-dqcohn.gcsj88h * {
           white-space: nowrap;
           display: inline;
           margin: 0;
           padding: 0
         }
 
-        #g-2rg6lt ::-webkit-input-placeholder {
+        #g-apfd59 ::-webkit-input-placeholder {
           color: #cacaca !important;
           text-overflow: ellipsis !important;
           opacity: 1;
@@ -15957,8 +16001,8 @@
           position: static
         }
 
-        #g-2rg6lt :-moz-placeholder,
-        #g-2rg6lt ::-moz-placeholder {
+        #g-apfd59 :-moz-placeholder,
+        #g-apfd59 ::-moz-placeholder {
           color: #cacaca !important;
           text-overflow: ellipsis !important;
           opacity: 1;
@@ -15971,7 +16015,7 @@
           position: static
         }
 
-        #g-2rg6lt input:-ms-input-placeholder {
+        #g-apfd59 input:-ms-input-placeholder {
           color: #cacaca !important;
           text-overflow: ellipsis !important;
           opacity: 1;
@@ -15984,22 +16028,22 @@
           position: static
         }
 
-        #g-2rg6lt [placeholder] {
+        #g-apfd59 [placeholder] {
           text-overflow: ellipsis
         }
 
-        #g-2rg6lt input:-moz-placeholder,
-        #g-2rg6lt input:-ms-input-placeholder,
-        #g-2rg6lt input::-moz-placeholder {
+        #g-apfd59 input:-moz-placeholder,
+        #g-apfd59 input:-ms-input-placeholder,
+        #g-apfd59 input::-moz-placeholder {
           text-overflow: ellipsis
         }
 
-        #g-2rg6lt input,
-        #g-2rg6lt input:focus,
-        #g-2rg6lt select,
-        #g-2rg6lt select:focus,
-        #g-2rg6lt textarea,
-        #g-2rg6lt textarea:focus {
+        #g-apfd59 input,
+        #g-apfd59 input:focus,
+        #g-apfd59 select,
+        #g-apfd59 select:focus,
+        #g-apfd59 textarea,
+        #g-apfd59 textarea:focus {
           margin: 0 !important;
           padding: 0;
           border: 0;
@@ -16024,8 +16068,8 @@
           float: none
         }
 
-        #g-2rg6lt button,
-        #g-2rg6lt input[type=submit] {
+        #g-apfd59 button,
+        #g-apfd59 input[type=submit] {
           margin: 0;
           padding: 0;
           background: 0 0;
@@ -16053,294 +16097,294 @@
           overflow: visible
         }
 
-        #g-2rg6lt button:active,
-        #g-2rg6lt button:disabled,
-        #g-2rg6lt button:focus,
-        #g-2rg6lt button:hover,
-        #g-2rg6lt input[type=submit]:active,
-        #g-2rg6lt input[type=submit]:disabled,
-        #g-2rg6lt input[type=submit]:focus,
-        #g-2rg6lt input[type=submit]:hover {
+        #g-apfd59 button:active,
+        #g-apfd59 button:disabled,
+        #g-apfd59 button:focus,
+        #g-apfd59 button:hover,
+        #g-apfd59 input[type=submit]:active,
+        #g-apfd59 input[type=submit]:disabled,
+        #g-apfd59 input[type=submit]:focus,
+        #g-apfd59 input[type=submit]:hover {
           outline: 0;
           text-decoration: none
         }
 
-        #g-2rg6lt button::-moz-focus-inner,
-        #g-2rg6lt input[type=submit]::-moz-focus-inner {
+        #g-apfd59 button::-moz-focus-inner,
+        #g-apfd59 input[type=submit]::-moz-focus-inner {
           padding: 0;
           border: 0
         }
 
-        #g-2rg6lt textarea {
+        #g-apfd59 textarea {
           line-height: 1.2;
           overflow: auto;
           resize: none !important
         }
 
-        #g-2rg6lt input:-webkit-autofill,
-        #g-2rg6lt textarea:-webkit-autofill {
+        #g-apfd59 input:-webkit-autofill,
+        #g-apfd59 textarea:-webkit-autofill {
           background-color: transparent !important;
           -webkit-box-shadow: 0 0 0 1000px #fff inset !important
         }
 
-        #g-2rg6lt * {
+        #g-apfd59 * {
           box-sizing: content-box !important;
           filter: none
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.giqxvws {
+        #g-apfd59.g-mzn615 .gvakq7a.g-uhve2 {
           background: #39579A !important;
           color: #fff !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.giqxvws:active,
-        #g-2rg6lt.g-sels6t .gkolpmk.giqxvws:focus,
-        #g-2rg6lt.g-sels6t .gkolpmk.giqxvws:hover {
+        #g-apfd59.g-mzn615 .gvakq7a.g-uhve2:active,
+        #g-apfd59.g-mzn615 .gvakq7a.g-uhve2:focus,
+        #g-apfd59.g-mzn615 .gvakq7a.g-uhve2:hover {
           background: #4a6dbc !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.g-knzzeg {
+        #g-apfd59.g-mzn615 .gvakq7a.gtyk10a {
           background: #3684F7 !important;
           color: #fff !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.g-knzzeg:active,
-        #g-2rg6lt.g-sels6t .gkolpmk.g-knzzeg:focus,
-        #g-2rg6lt.g-sels6t .gkolpmk.g-knzzeg:hover {
+        #g-apfd59.g-mzn615 .gvakq7a.gtyk10a:active,
+        #g-apfd59.g-mzn615 .gvakq7a.gtyk10a:focus,
+        #g-apfd59.g-mzn615 .gvakq7a.gtyk10a:hover {
           background: #67a2f9 !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.g1qu1nk {
+        #g-apfd59.g-mzn615 .gvakq7a.g-ob47ge {
           background: #33465E !important;
           color: #fff !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.g1qu1nk:active,
-        #g-2rg6lt.g-sels6t .gkolpmk.g1qu1nk:focus,
-        #g-2rg6lt.g-sels6t .gkolpmk.g1qu1nk:hover {
+        #g-apfd59.g-mzn615 .gvakq7a.g-ob47ge:active,
+        #g-apfd59.g-mzn615 .gvakq7a.g-ob47ge:focus,
+        #g-apfd59.g-mzn615 .gvakq7a.g-ob47ge:hover {
           background: #455f7f !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.g-vs2oho {
+        #g-apfd59.g-mzn615 .gvakq7a.gkfp82m {
           background: #159F49 !important;
           color: #fff !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.g-vs2oho:active,
-        #g-2rg6lt.g-sels6t .gkolpmk.g-vs2oho:focus,
-        #g-2rg6lt.g-sels6t .gkolpmk.g-vs2oho:hover {
+        #g-apfd59.g-mzn615 .gvakq7a.gkfp82m:active,
+        #g-apfd59.g-mzn615 .gvakq7a.gkfp82m:focus,
+        #g-apfd59.g-mzn615 .gvakq7a.gkfp82m:hover {
           background: #1bcc5e !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.gb4van {
+        #g-apfd59.g-mzn615 .gvakq7a.g-qn9sml {
           background: #DF4901 !important;
           color: #fff !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.gb4van:active,
-        #g-2rg6lt.g-sels6t .gkolpmk.gb4van:focus,
-        #g-2rg6lt.g-sels6t .gkolpmk.gb4van:hover {
+        #g-apfd59.g-mzn615 .gvakq7a.g-qn9sml:active,
+        #g-apfd59.g-mzn615 .gvakq7a.g-qn9sml:focus,
+        #g-apfd59.g-mzn615 .gvakq7a.g-qn9sml:hover {
           background: #fe6115 !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.g-k19eap {
+        #g-apfd59.g-mzn615 .gvakq7a.g6ya5f {
           background: #da347c !important;
           color: #fff !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.g-k19eap:active,
-        #g-2rg6lt.g-sels6t .gkolpmk.g-k19eap:focus,
-        #g-2rg6lt.g-sels6t .gkolpmk.g-k19eap:hover {
+        #g-apfd59.g-mzn615 .gvakq7a.g6ya5f:active,
+        #g-apfd59.g-mzn615 .gvakq7a.g6ya5f:focus,
+        #g-apfd59.g-mzn615 .gvakq7a.g6ya5f:hover {
           background: #e25f98 !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.gauyf67 {
+        #g-apfd59.g-mzn615 .gvakq7a.gqe6xv7 {
           background: #00659B !important;
           color: #fff !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.gauyf67:active,
-        #g-2rg6lt.g-sels6t .gkolpmk.gauyf67:focus,
-        #g-2rg6lt.g-sels6t .gkolpmk.gauyf67:hover {
+        #g-apfd59.g-mzn615 .gvakq7a.gqe6xv7:active,
+        #g-apfd59.g-mzn615 .gvakq7a.gqe6xv7:focus,
+        #g-apfd59.g-mzn615 .gvakq7a.gqe6xv7:hover {
           background: #0086ce !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.gnbtq7j {
+        #g-apfd59.g-mzn615 .gvakq7a.g-2znxyl {
           background: #CA1E20 !important;
           color: #fff !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.gnbtq7j:active,
-        #g-2rg6lt.g-sels6t .gkolpmk.gnbtq7j:focus,
-        #g-2rg6lt.g-sels6t .gkolpmk.gnbtq7j:hover {
+        #g-apfd59.g-mzn615 .gvakq7a.g-2znxyl:active,
+        #g-apfd59.g-mzn615 .gvakq7a.g-2znxyl:focus,
+        #g-apfd59.g-mzn615 .gvakq7a.g-2znxyl:hover {
           background: #e2393b !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.g4b4bnc {
+        #g-apfd59.g-mzn615 .gvakq7a.g-5w8mvq {
           background: #1DA8E2 !important;
           color: #fff !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.g4b4bnc:active,
-        #g-2rg6lt.g-sels6t .gkolpmk.g4b4bnc:focus,
-        #g-2rg6lt.g-sels6t .gkolpmk.g4b4bnc:hover {
+        #g-apfd59.g-mzn615 .gvakq7a.g-5w8mvq:active,
+        #g-apfd59.g-mzn615 .gvakq7a.g-5w8mvq:focus,
+        #g-apfd59.g-mzn615 .gvakq7a.g-5w8mvq:hover {
           background: #4ab9e8 !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.g9a16ol,
-        #g-2rg6lt.g-sels6t .gkolpmk.gz1rt0j {
+        #g-apfd59.g-mzn615 .gvakq7a.gqccu3x,
+        #g-apfd59.g-mzn615 .gvakq7a.g-pixfxd {
           background: #527CBD !important;
           color: #fff !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.g9a16ol:active,
-        #g-2rg6lt.g-sels6t .gkolpmk.g9a16ol:focus,
-        #g-2rg6lt.g-sels6t .gkolpmk.g9a16ol:hover,
-        #g-2rg6lt.g-sels6t .gkolpmk.gz1rt0j:active,
-        #g-2rg6lt.g-sels6t .gkolpmk.gz1rt0j:focus,
-        #g-2rg6lt.g-sels6t .gkolpmk.gz1rt0j:hover {
+        #g-apfd59.g-mzn615 .gvakq7a.gqccu3x:active,
+        #g-apfd59.g-mzn615 .gvakq7a.gqccu3x:focus,
+        #g-apfd59.g-mzn615 .gvakq7a.gqccu3x:hover,
+        #g-apfd59.g-mzn615 .gvakq7a.g-pixfxd:active,
+        #g-apfd59.g-mzn615 .gvakq7a.g-pixfxd:focus,
+        #g-apfd59.g-mzn615 .gvakq7a.g-pixfxd:hover {
           background: #7798cb !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.g-o8461i {
+        #g-apfd59.g-mzn615 .gvakq7a.g-yb85mw {
           background: #507298 !important;
           color: #fff !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.g-o8461i:active,
-        #g-2rg6lt.g-sels6t .gkolpmk.g-o8461i:focus,
-        #g-2rg6lt.g-sels6t .gkolpmk.g-o8461i:hover {
+        #g-apfd59.g-mzn615 .gvakq7a.g-yb85mw:active,
+        #g-apfd59.g-mzn615 .gvakq7a.g-yb85mw:focus,
+        #g-apfd59.g-mzn615 .gvakq7a.g-yb85mw:hover {
           background: #6a8cb1 !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.g4ut0r1,
-        #g-2rg6lt.g-sels6t .gkolpmk.g-c96wiv {
+        #g-apfd59.g-mzn615 .gvakq7a.g-ssh9xn,
+        #g-apfd59.g-mzn615 .gvakq7a.g-44zkrb {
           background: #333 !important;
           color: #fff !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.g4ut0r1:active,
-        #g-2rg6lt.g-sels6t .gkolpmk.g4ut0r1:focus,
-        #g-2rg6lt.g-sels6t .gkolpmk.g4ut0r1:hover,
-        #g-2rg6lt.g-sels6t .gkolpmk.g-c96wiv:active,
-        #g-2rg6lt.g-sels6t .gkolpmk.g-c96wiv:focus,
-        #g-2rg6lt.g-sels6t .gkolpmk.g-c96wiv:hover {
+        #g-apfd59.g-mzn615 .gvakq7a.g-ssh9xn:active,
+        #g-apfd59.g-mzn615 .gvakq7a.g-ssh9xn:focus,
+        #g-apfd59.g-mzn615 .gvakq7a.g-ssh9xn:hover,
+        #g-apfd59.g-mzn615 .gvakq7a.g-44zkrb:active,
+        #g-apfd59.g-mzn615 .gvakq7a.g-44zkrb:focus,
+        #g-apfd59.g-mzn615 .gvakq7a.g-44zkrb:hover {
           background: #4d4d4d !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.g-6ajc2m {
+        #g-apfd59.g-mzn615 .gvakq7a.g-8j1ef4 {
           background: #CF1D13 !important;
           color: #fff !important
         }
 
-        #g-2rg6lt.g-sels6t .gkolpmk.g-6ajc2m:active,
-        #g-2rg6lt.g-sels6t .gkolpmk.g-6ajc2m:focus,
-        #g-2rg6lt.g-sels6t .gkolpmk.g-6ajc2m:hover {
+        #g-apfd59.g-mzn615 .gvakq7a.g-8j1ef4:active,
+        #g-apfd59.g-mzn615 .gvakq7a.g-8j1ef4:focus,
+        #g-apfd59.g-mzn615 .gvakq7a.g-8j1ef4:hover {
           background: #eb342a !important
         }
 
-        #g-2rg6lt.g-sels6t .g-jf5szg:after {
+        #g-apfd59.g-mzn615 .g-b8rsyq:after {
           height: 0;
           content: none
         }
 
-        #g-2rg6lt .g1xx9bk.gmx5zq0:before {
+        #g-apfd59 .g-jpwvgu.g-wsh4ae:before {
           content: "\e802"
         }
 
-        #g-2rg6lt .g1xx9bk.gwpzzx9:before {
+        #g-apfd59 .g-jpwvgu.ghxmq5h:before {
           content: "\e80d"
         }
 
-        #g-2rg6lt .g1xx9bk.gi93nu7:before {
+        #g-apfd59 .g-jpwvgu.gjrbd1v:before {
           content: "\e805"
         }
 
-        #g-2rg6lt .g1xx9bk.g-9ffo2e:before {
+        #g-apfd59 .g-jpwvgu.gj9oxk:before {
           content: "\e800"
         }
 
-        #g-2rg6lt .g1xx9bk.g-g34st4:before {
+        #g-apfd59 .g-jpwvgu.g-6jxbeu:before {
           content: "\e804"
         }
 
-        #g-2rg6lt .g1xx9bk.g-16crsp:before {
+        #g-apfd59 .g-jpwvgu.g-hj1pmt:before {
           content: "\e811"
         }
 
-        #g-2rg6lt .g1xx9bk.g-t66pey:before {
+        #g-apfd59 .g-jpwvgu.gdn9lsc:before {
           content: "\e812"
         }
 
-        #g-2rg6lt .g1xx9bk.g-m31ioj:before {
+        #g-apfd59 .g-jpwvgu.g-i7bstn:before {
           content: "\e813"
         }
 
-        #g-2rg6lt .g1xx9bk.gly6qnt:before {
+        #g-apfd59 .g-jpwvgu.g-7m8os7:before {
           content: "\e806"
         }
 
-        #g-2rg6lt .g1xx9bk.g-sd5yab:before,
-        #g-2rg6lt .g1xx9bk.g-rm2cad:before {
+        #g-apfd59 .g-jpwvgu.gyal9at:before,
+        #g-apfd59 .g-jpwvgu.gw0z6gn:before {
           content: "\e80a"
         }
 
-        #g-2rg6lt .g1xx9bk.gjoigkj:before {
+        #g-apfd59 .g-jpwvgu.g-ulr1cx:before {
           content: "\e807"
         }
 
-        #g-2rg6lt .g1xx9bk.g-ajrskf:before {
+        #g-apfd59 .g-jpwvgu.ghyuld:before {
           content: "\e801"
         }
 
-        #g-2rg6lt .g1xx9bk.g-9zp6bp:before {
+        #g-apfd59 .g-jpwvgu.g-k3rshl:before {
           content: "\e821"
         }
 
-        #g-2rg6lt .g1xx9bk.gvfp1bq:before {
+        #g-apfd59 .g-jpwvgu.g-wil5ec:before {
           content: "\e808"
         }
 
-        #g-2rg6lt .g1xx9bk.g7xu2m8:before {
+        #g-apfd59 .g-jpwvgu.g-aczxr2:before {
           content: "\e809"
         }
 
-        #g-2rg6lt {
+        #g-apfd59 {
           -webkit-user-select: none;
           -moz-user-select: none;
           -ms-user-select: none;
           user-select: none
         }
 
-        #g-2rg6lt .g-rjyfpl {
+        #g-apfd59 .g-rjmoc5 {
           position: relative;
           margin-bottom: 16px
         }
 
-        .g-ntvu5r#g-2rg6lt .g-rjyfpl {
+        .gw5dbox#g-apfd59 .g-rjmoc5 {
           transition: none !important
         }
 
-        .g-25qy19 #g-2rg6lt.gadjvo3 .g-rjyfpl {
+        .g-juod4h #g-apfd59.g-h5mq1d .g-rjmoc5 {
           overflow: hidden;
           background: #7fb61a !important;
           border-radius: 0 2px 2px 0 !important
         }
 
-        .g-25qy19 #g-2rg6lt.gadjvo3 .g-rjyfpl.gi28vi6 {
+        .g-juod4h #g-apfd59.g-h5mq1d .g-rjmoc5.gal578k {
           transition: background-color .2s cubic-bezier(.455, .03, .515, .955) !important
         }
 
-        .g-ntvu5r.g-25qy19 #g-2rg6lt.gadjvo3 .g-rjyfpl.gi28vi6 {
+        .gw5dbox.g-juod4h #g-apfd59.g-h5mq1d .g-rjmoc5.gal578k {
           transition: none !important !important
         }
 
-        .g-25qy19 #g-2rg6lt.gadjvo3 .g-rjyfpl.gi28vi6:hover {
+        .g-juod4h #g-apfd59.g-h5mq1d .g-rjmoc5.gal578k:hover {
           background: #8cbd31 !important;
           left: 46px !important
         }
 
-        .g-25qy19 #g-2rg6lt.gadjvo3 .g-rjyfpl .gw5w37m {
+        .g-juod4h #g-apfd59.g-h5mq1d .g-rjmoc5 .gxye84g {
           top: -42px;
           -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
@@ -16351,24 +16395,24 @@
           border-radius: 0 2px 2px 0 !important
         }
 
-        .g-25qy19 #g-2rg6lt.gadjvo3 .g-rjyfpl .gw5w37m .g-49cnca {
+        .g-juod4h #g-apfd59.g-h5mq1d .g-rjmoc5 .gxye84g .g-oi39f8 {
           padding-left: 16px !important;
           padding-right: 16px !important
         }
 
-        .g-25qy19 #g-2rg6lt.gadjvo3 .g-rjyfpl .gw5w37m .g1xx9bk {
+        .g-juod4h #g-apfd59.g-h5mq1d .g-rjmoc5 .gxye84g .g-jpwvgu {
           display: none
         }
 
-        .g-p9kqlo #g-2rg6lt.gadjvo3 .g-rjyfpl.gi28vi6 {
+        .g-g0j99u #g-apfd59.g-h5mq1d .g-rjmoc5.gal578k {
           transition-duration: 0s
         }
 
-        .g-p9kqlo #g-2rg6lt.gadjvo3 .g-rjyfpl.gi28vi6:hover {
+        .g-g0j99u #g-apfd59.g-h5mq1d .g-rjmoc5.gal578k:hover {
           right: 3px !important
         }
 
-        .g-p9kqlo #g-2rg6lt.gadjvo3 .g-rjyfpl .gw5w37m {
+        .g-g0j99u #g-apfd59.g-h5mq1d .g-rjmoc5 .gxye84g {
           -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
           -ms-transform-origin: top left;
@@ -16377,51 +16421,51 @@
           border-radius: 2px 2px 0 0 !important
         }
 
-        .g-p9kqlo #g-2rg6lt.gadjvo3 .g-rjyfpl .gw5w37m .g-49cnca {
+        .g-g0j99u #g-apfd59.g-h5mq1d .g-rjmoc5 .gxye84g .g-oi39f8 {
           padding-left: 16px !important;
           padding-right: 16px !important;
           padding-bottom: 4px !important
         }
 
-        .g-p9kqlo #g-2rg6lt.gadjvo3 .g-rjyfpl .gw5w37m .g1xx9bk {
+        .g-g0j99u #g-apfd59.g-h5mq1d .g-rjmoc5 .gxye84g .g-jpwvgu {
           display: none
         }
 
-        .g-25qy19 #g-2rg6lt {
+        .g-juod4h #g-apfd59 {
           float: right;
           text-align: right !important
         }
 
-        .g-25qy19 #g-2rg6lt .g-rjyfpl {
+        .g-juod4h #g-apfd59 .g-rjmoc5 {
           left: 0;
           transition: left .5s cubic-bezier(.455, .03, .515, .955)
         }
 
-        .g-ntvu5r.g-25qy19 #g-2rg6lt .g-rjyfpl {
+        .gw5dbox.g-juod4h #g-apfd59 .g-rjmoc5 {
           transition: none !important
         }
 
-        .g-25qy19 #g-2rg6lt .g-rjyfpl.g-2v9fxg {
+        .g-juod4h #g-apfd59 .g-rjmoc5.gs8qk5i {
           left: 42px !important
         }
 
-        .g-25qy19 #g-2rg6lt .g-rjyfpl .g-6ryc86:first-child {
+        .g-juod4h #g-apfd59 .g-rjmoc5 .gl8qix4:first-child {
           border-top-right-radius: 2px
         }
 
-        .g-25qy19 #g-2rg6lt .g-rjyfpl .g-6ryc86:last-child {
+        .g-juod4h #g-apfd59 .g-rjmoc5 .gl8qix4:last-child {
           border-bottom-right-radius: 2px
         }
 
-        .g-25qy19 #g-2rg6lt .g-rjyfpl .g-6ryc86.g3yylvt:hover {
+        .g-juod4h #g-apfd59 .g-rjmoc5 .gl8qix4.g-jnk213:hover {
           border-radius: 0 2px 2px 0
         }
 
-        .g-25qy19 #g-2rg6lt .g-rjyfpl .g-49cnca {
+        .g-juod4h #g-apfd59 .g-rjmoc5 .g-oi39f8 {
           padding-right: 1px !important
         }
 
-        .g-25qy19 #g-2rg6lt .gw5w37m {
+        .g-juod4h #g-apfd59 .gxye84g {
           left: 0;
           text-align: right;
           transition-property: left, border-radius, background-color !important;
@@ -16430,44 +16474,44 @@
           min-width: 500px
         }
 
-        .g-ntvu5r.g-25qy19 #g-2rg6lt .gw5w37m {
+        .gw5dbox.g-juod4h #g-apfd59 .gxye84g {
           transition: none !important !important
         }
 
-        .g-p9kqlo #g-2rg6lt {
+        .g-g0j99u #g-apfd59 {
           text-align: right
         }
 
-        .g-p9kqlo #g-2rg6lt .g-rjyfpl {
+        .g-g0j99u #g-apfd59 .g-rjmoc5 {
           right: -42px;
           transition: right .5s cubic-bezier(.455, .03, .515, .955)
         }
 
-        .g-ntvu5r.g-p9kqlo #g-2rg6lt .g-rjyfpl {
+        .gw5dbox.g-g0j99u #g-apfd59 .g-rjmoc5 {
           transition: none !important
         }
 
-        .g-p9kqlo #g-2rg6lt .g-rjyfpl.g-2v9fxg {
+        .g-g0j99u #g-apfd59 .g-rjmoc5.gs8qk5i {
           right: 0 !important
         }
 
-        .g-p9kqlo #g-2rg6lt .g-rjyfpl .g-6ryc86:first-child {
+        .g-g0j99u #g-apfd59 .g-rjmoc5 .gl8qix4:first-child {
           border-top-left-radius: 2px
         }
 
-        .g-p9kqlo #g-2rg6lt .g-rjyfpl .g-6ryc86:last-child {
+        .g-g0j99u #g-apfd59 .g-rjmoc5 .gl8qix4:last-child {
           border-bottom-left-radius: 2px
         }
 
-        .g-p9kqlo #g-2rg6lt .g-rjyfpl .g-6ryc86.g3yylvt:hover {
+        .g-g0j99u #g-apfd59 .g-rjmoc5 .gl8qix4.g-jnk213:hover {
           border-radius: 2px 0 0 2px
         }
 
-        .g-p9kqlo #g-2rg6lt .g-rjyfpl .g-49cnca {
+        .g-g0j99u #g-apfd59 .g-rjmoc5 .g-oi39f8 {
           padding-left: 1px !important
         }
 
-        .g-p9kqlo #g-2rg6lt .gw5w37m {
+        .g-g0j99u #g-apfd59 .gxye84g {
           text-align: left;
           right: 42px;
           transition-property: right, border-radius, background-color !important;
@@ -16475,11 +16519,11 @@
           transition-timing-function: cubic-bezier(.455, .03, .515, .955) !important
         }
 
-        .g-ntvu5r.g-p9kqlo #g-2rg6lt .gw5w37m {
+        .gw5dbox.g-g0j99u #g-apfd59 .gxye84g {
           transition: none !important !important
         }
 
-        #g-2rg6lt .g-6ryc86 {
+        #g-apfd59 .gl8qix4 {
           color: #ffffff !important;
           background: #7fb61a !important;
           text-decoration: none;
@@ -16488,26 +16532,26 @@
           font-size: 0
         }
 
-        #g-2rg6lt .g-6ryc86:active,
-        #g-2rg6lt .g-6ryc86:hover {
+        #g-apfd59 .gl8qix4:active,
+        #g-apfd59 .gl8qix4:hover {
           background: #8cbd31 !important;
           color: #ffffff !important
         }
 
-        #g-2rg6lt .g-6ryc86:focus {
+        #g-apfd59 .gl8qix4:focus {
           text-decoration: none !important;
           outline: 0 !important
         }
 
-        #g-2rg6lt .gw5w37m {
+        #g-apfd59 .gxye84g {
           position: relative
         }
 
-        #g-2rg6lt .g-ntvu5r.gw5w37m {
+        #g-apfd59 .gw5dbox.gxye84g {
           transition: none !important
         }
 
-        #g-2rg6lt .g-49cnca {
+        #g-apfd59 .g-oi39f8 {
           font-weight: 700;
           padding: 0 16px;
           font-size: 14px;
@@ -16521,12 +16565,12 @@
           max-width: 500px
         }
 
-        #g-2rg6lt .gjn4f64 {
+        #g-apfd59 .g-9zep7u {
           display: inline-block;
           width: 6px
         }
 
-        #g-2rg6lt .g1xx9bk {
+        #g-apfd59 .g-jpwvgu {
           font-family: gsc !important;
           font-style: normal !important;
           font-weight: 400 !important;
@@ -16542,7 +16586,7 @@
           vertical-align: middle
         }
 
-        #g-2rg6lt .g1xx9bk:before {
+        #g-apfd59 .g-jpwvgu:before {
           color: inherit !important;
           font-family: gsc !important;
           font-style: inherit !important;
@@ -16551,17 +16595,17 @@
           background-color: inherit !important
         }
 
-        .g-p9kqlo #g-2rg6lt .g-jf5szg {
+        .g-g0j99u #g-apfd59 .g-b8rsyq {
           text-align: right;
           position: relative;
           right: 42px
         }
 
-        #g-2rg6lt .g-jf5szg {
+        #g-apfd59 .g-b8rsyq {
           font-size: 0
         }
 
-        #g-2rg6lt .g-jf5szg:after {
+        #g-apfd59 .g-b8rsyq:after {
           background: #99c548;
           height: 1px;
           width: 42px;
@@ -16570,33 +16614,33 @@
         }
 
       </style>
-      <div class="g-rjyfpl g-2v9fxg gi28vi6"> <a class="g-6ryc86 gkolpmk gw5w37m  g3yylvt  giqxvws"
+      <div class="g-rjmoc5 gs8qk5i gal578k"> <a class="gl8qix4 gvakq7a gxye84g  g-jnk213  g-uhve2"
            data-tag="facebook"
            data-track="action"
            target="_blank"
-           href="https://www.facebook.com/WebDeveloperConference/"> <span class="g1xx9bk gmx5zq0"></span> <span class="g-49cnca ">Follow on Facebook</span> </a>
-        <div class="g-jf5szg"></div> <a class="g-6ryc86 gkolpmk gw5w37m  g3yylvt  g4b4bnc"
+           href="https://www.facebook.com/WebDeveloperConference/"> <span class="g-jpwvgu g-wsh4ae"></span> <span class="g-oi39f8 ">Follow on Facebook</span> </a>
+        <div class="g-b8rsyq"></div> <a class="gl8qix4 gvakq7a gxye84g  g-jnk213  g-5w8mvq"
            data-tag="twitter"
            data-track="action"
            target="_blank"
-           href="https://twitter.com/wdc_conference"> <span class="g1xx9bk gly6qnt"></span> <span class="g-49cnca ">Follow on Twitter</span> </a>
-        <div class="g-jf5szg"></div> <a class="g-6ryc86 gkolpmk gw5w37m  g3yylvt  gb4van"
+           href="https://twitter.com/wdc_conference"> <span class="g-jpwvgu g-7m8os7"></span> <span class="g-oi39f8 ">Follow on Twitter</span> </a>
+        <div class="g-b8rsyq"></div> <a class="gl8qix4 gvakq7a gxye84g  g-jnk213  g-qn9sml"
            data-tag="gplus"
            data-track="action"
            target="_blank"
-           href="https://plus.google.com/b/110901495361821148935/110901495361821148935"> <span class="g1xx9bk g-g34st4"></span> <span class="g-49cnca ">Follow on Google+</span> </a>
+           href="https://plus.google.com/b/110901495361821148935/110901495361821148935"> <span class="g-jpwvgu g-6jxbeu"></span> <span class="g-oi39f8 ">Follow on Google+</span> </a>
       </div>
     </w-div>
     <style media="print"
            type="text/css">
-      #g-o5fafn {
+      #g-p56twr {
         display: none !important
       }
 
     </style>
     <style media="handheld,screen,projection,tv"
            type="text/css">
-      #g-o5fafn {
+      #g-p56twr {
         margin: 0;
         padding: 0;
         border: 0;
@@ -16620,22 +16664,22 @@
         filter: none
       }
 
-      #g-o5fafn a,
-      #g-o5fafn b,
-      #g-o5fafn div,
-      #g-o5fafn em,
-      #g-o5fafn form,
-      #g-o5fafn h1,
-      #g-o5fafn i,
-      #g-o5fafn img,
-      #g-o5fafn label,
-      #g-o5fafn li,
-      #g-o5fafn ol,
-      #g-o5fafn p,
-      #g-o5fafn span,
-      #g-o5fafn strong,
-      #g-o5fafn u,
-      #g-o5fafn ul {
+      #g-p56twr a,
+      #g-p56twr b,
+      #g-p56twr div,
+      #g-p56twr em,
+      #g-p56twr form,
+      #g-p56twr h1,
+      #g-p56twr i,
+      #g-p56twr img,
+      #g-p56twr label,
+      #g-p56twr li,
+      #g-p56twr ol,
+      #g-p56twr p,
+      #g-p56twr span,
+      #g-p56twr strong,
+      #g-p56twr u,
+      #g-p56twr ul {
         margin: 0;
         padding: 0;
         border: 0;
@@ -16666,59 +16710,59 @@
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
       }
 
-      #g-o5fafn a,
-      #g-o5fafn a:active,
-      #g-o5fafn a:focus {
+      #g-p56twr a,
+      #g-p56twr a:active,
+      #g-p56twr a:focus {
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         text-decoration: none
       }
 
-      #g-o5fafn img {
+      #g-p56twr img {
         display: block
       }
 
-      #g-o5fafn .g-pj0war {
+      #g-p56twr .g-dqcohn {
         vertical-align: baseline;
         line-height: 1.35
       }
 
-      #g-o5fafn .g-pj0war b,
-      #g-o5fafn .g-pj0war strong {
+      #g-p56twr .g-dqcohn b,
+      #g-p56twr .g-dqcohn strong {
         font-weight: 700
       }
 
-      #g-o5fafn .g-pj0war em,
-      #g-o5fafn .g-pj0war i {
+      #g-p56twr .g-dqcohn em,
+      #g-p56twr .g-dqcohn i {
         font-style: italic
       }
 
-      #g-o5fafn .g-pj0war u {
+      #g-p56twr .g-dqcohn u {
         text-decoration: underline
       }
 
-      #g-o5fafn .g-pj0war p {
+      #g-p56twr .g-dqcohn p {
         margin: 0 0 10px 0
       }
 
-      #g-o5fafn .g-pj0war a {
+      #g-p56twr .g-dqcohn a {
         text-decoration: underline
       }
 
-      #g-o5fafn .g-pj0war.gfe7ogh {
+      #g-p56twr .g-dqcohn.gcsj88h {
         display: inline;
         white-space: nowrap;
         margin: 0;
         padding: 0
       }
 
-      #g-o5fafn .g-pj0war.gfe7ogh * {
+      #g-p56twr .g-dqcohn.gcsj88h * {
         white-space: nowrap;
         display: inline;
         margin: 0;
         padding: 0
       }
 
-      #g-o5fafn ::-webkit-input-placeholder {
+      #g-p56twr ::-webkit-input-placeholder {
         color: #cacaca !important;
         text-overflow: ellipsis !important;
         opacity: 1;
@@ -16731,8 +16775,8 @@
         position: static
       }
 
-      #g-o5fafn :-moz-placeholder,
-      #g-o5fafn ::-moz-placeholder {
+      #g-p56twr :-moz-placeholder,
+      #g-p56twr ::-moz-placeholder {
         color: #cacaca !important;
         text-overflow: ellipsis !important;
         opacity: 1;
@@ -16745,7 +16789,7 @@
         position: static
       }
 
-      #g-o5fafn input:-ms-input-placeholder {
+      #g-p56twr input:-ms-input-placeholder {
         color: #cacaca !important;
         text-overflow: ellipsis !important;
         opacity: 1;
@@ -16758,22 +16802,22 @@
         position: static
       }
 
-      #g-o5fafn [placeholder] {
+      #g-p56twr [placeholder] {
         text-overflow: ellipsis
       }
 
-      #g-o5fafn input:-moz-placeholder,
-      #g-o5fafn input:-ms-input-placeholder,
-      #g-o5fafn input::-moz-placeholder {
+      #g-p56twr input:-moz-placeholder,
+      #g-p56twr input:-ms-input-placeholder,
+      #g-p56twr input::-moz-placeholder {
         text-overflow: ellipsis
       }
 
-      #g-o5fafn input,
-      #g-o5fafn input:focus,
-      #g-o5fafn select,
-      #g-o5fafn select:focus,
-      #g-o5fafn textarea,
-      #g-o5fafn textarea:focus {
+      #g-p56twr input,
+      #g-p56twr input:focus,
+      #g-p56twr select,
+      #g-p56twr select:focus,
+      #g-p56twr textarea,
+      #g-p56twr textarea:focus {
         margin: 0 !important;
         padding: 0;
         border: 0;
@@ -16799,8 +16843,8 @@
         float: none
       }
 
-      #g-o5fafn button,
-      #g-o5fafn input[type=submit] {
+      #g-p56twr button,
+      #g-p56twr input[type=submit] {
         margin: 0;
         padding: 0;
         background: 0 0;
@@ -16829,69 +16873,69 @@
         overflow: visible
       }
 
-      #g-o5fafn button:active,
-      #g-o5fafn button:disabled,
-      #g-o5fafn button:focus,
-      #g-o5fafn button:hover,
-      #g-o5fafn input[type=submit]:active,
-      #g-o5fafn input[type=submit]:disabled,
-      #g-o5fafn input[type=submit]:focus,
-      #g-o5fafn input[type=submit]:hover {
+      #g-p56twr button:active,
+      #g-p56twr button:disabled,
+      #g-p56twr button:focus,
+      #g-p56twr button:hover,
+      #g-p56twr input[type=submit]:active,
+      #g-p56twr input[type=submit]:disabled,
+      #g-p56twr input[type=submit]:focus,
+      #g-p56twr input[type=submit]:hover {
         outline: 0;
         text-decoration: none
       }
 
-      #g-o5fafn button::-moz-focus-inner,
-      #g-o5fafn input[type=submit]::-moz-focus-inner {
+      #g-p56twr button::-moz-focus-inner,
+      #g-p56twr input[type=submit]::-moz-focus-inner {
         padding: 0;
         border: 0
       }
 
-      #g-o5fafn textarea {
+      #g-p56twr textarea {
         line-height: 1.2;
         overflow: auto;
         resize: none !important
       }
 
-      #g-o5fafn input:-webkit-autofill,
-      #g-o5fafn textarea:-webkit-autofill {
+      #g-p56twr input:-webkit-autofill,
+      #g-p56twr textarea:-webkit-autofill {
         background-color: transparent !important;
         -webkit-box-shadow: 0 0 0 1000px #fff inset !important
       }
 
-      #g-o5fafn * {
+      #g-p56twr * {
         box-sizing: content-box !important;
         filter: none
       }
 
-      #g-o5fafn.gtraxlo {
+      #g-p56twr.g-hpkvu {
         top: 30%;
         position: fixed;
         z-index: 2147483635
       }
 
-      #g-o5fafn.gtraxlo :last-child .g-rjyfpl {
+      #g-p56twr.g-hpkvu :last-child .g-rjmoc5 {
         margin-bottom: 0 !important
       }
 
-      #g-o5fafn.gtraxlo.g-25qy19 {
+      #g-p56twr.g-hpkvu.g-juod4h {
         width: 1px;
         left: -1px;
         *zoom: 1
       }
 
-      #g-o5fafn.gtraxlo.g-25qy19:after,
-      #g-o5fafn.gtraxlo.g-25qy19:before {
+      #g-p56twr.g-hpkvu.g-juod4h:after,
+      #g-p56twr.g-hpkvu.g-juod4h:before {
         display: table;
         content: "";
         line-height: 0
       }
 
-      #g-o5fafn.gtraxlo.g-25qy19:after {
+      #g-p56twr.g-hpkvu.g-juod4h:after {
         clear: both
       }
 
-      #g-o5fafn.gtraxlo.g-p9kqlo {
+      #g-p56twr.g-hpkvu.g-g0j99u {
         right: 0;
         width: 0
       }
