@@ -1,11 +1,21 @@
-import { NgModule } from '@angular/core';
+import { Injector, NgModule } from '@angular/core';
+import { createCustomElement } from '@angular/elements';
 import { BrowserModule } from '@angular/platform-browser';
-import { MomoUiModule } from 'momo-ui';
+import { ExpanderComponent, MomoUiModule } from 'dist/momo-ui/momo-ui';
 import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [AppComponent],
   imports: [BrowserModule, MomoUiModule],
-  bootstrap: [AppComponent],
+  declarations: [AppComponent],
+  providers: [],
+  bootstrap: [],
+  entryComponents: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  constructor(private injector: Injector) {}
+
+  ngDoBootstrap() {
+    const elm = createCustomElement(ExpanderComponent, { injector: this.injector });
+    customElements.define('momo-expander', elm);
+  }
+}
