@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8" />
+</head>
+
+<body>
+  <style>
+    body {
+      display: flex;
+      flex-direction: row;
+    }
+
+  </style>
+  <!-- Polyfills for Browsers supporting
+        Custom Elements. Needed b/c we downlevel
+        to ES5. See: @webcomponents/custom-elements
+    -->
+  <script src="../node_modules/@webcomponents/custom-elements/src/native-shim.js"></script>
+
+  <!-- Polyfills for Browsers not supporting
+        Custom Elements. See: @webcomponents/custom-elements
+    -->
+  <script src="../node_modules/@webcomponents/custom-elements/custom-elements.min.js"></script>
+
+  <!-- Zone.js -->
+  <!--
+    Consider excluding zone.js when creating
+    Custom Elements by using the noop zone.
+    -->
+  <script src="../node_modules/zone.js/dist/zone.js"></script>
+
+  <!-- Rx -->
+  <script src="../node_modules/rxjs/bundles/rxjs.umd.js"></script>
+
+  <!-- Angular Packages -->
+  <script src="../node_modules/@angular/core/bundles/core.umd.js"></script>
+  <script src="../node_modules/@angular/common/bundles/common.umd.js"></script>
+  <script src="../node_modules/@angular/platform-browser/bundles/platform-browser.umd.js"></script>
+  <script src="../node_modules/@angular/elements/bundles/elements.umd.js"></script>
+
+  <!-- Custom Element -->
+  <script src="./momo-expander.bundle.js"></script>
+
+  <!-- Calling Custom Element -->
+  <momo-expander title="Stunden"
+                 icon="../projects/momo-ui/src/lib/assets/icons/Time.svg"
+                 content="<ul><li>Montag 00:28</li><li>Freitag 06:02</li><li>...</li></ul>">
+  </momo-expander>
+
+  <!--
+    Here we could call additional custom elements
+    reusing the loaded packages above.
+    -->
+
+</body>
+
+</html>
