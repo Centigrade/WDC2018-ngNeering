@@ -18,11 +18,11 @@ describe('ExpanderComponent', () => {
     fixture.detectChanges();
   });
 
-  test('it should create', () => {
+  test('should create', () => {
     expect(component).toBeTruthy();
   });
 
-  test('it should collapse the content if not expanded', () => {
+  test('should collapse the content if not expanded', () => {
     // Act.
     component.expanded = false;
     fixture.detectChanges();
@@ -32,7 +32,7 @@ describe('ExpanderComponent', () => {
     expect(content).toEqual(null); // returns null if not available
   });
 
-  test('it should show the content if expanded', () => {
+  test('should show the content if expanded', () => {
     // Act.
     component.expanded = true;
     fixture.detectChanges();
@@ -42,7 +42,7 @@ describe('ExpanderComponent', () => {
     expect(content).toBeTruthy();
   });
 
-  test('it should render the title in the header', () => {
+  test('should render the title in the header', () => {
     // Arrange.
     const sampleTitle = 'Hello WDC';
 
@@ -55,7 +55,7 @@ describe('ExpanderComponent', () => {
     expect(titleText.innerHTML).toEqual(sampleTitle);
   });
 
-  test('it should set the disabled class on the host is disabled', () => {
+  test('should set the disabled class on the host is disabled', () => {
     // Arrange.
     const hostElement = fixture.debugElement;
 
@@ -67,7 +67,7 @@ describe('ExpanderComponent', () => {
     expect(hostElement.classes.disabled).toBeTruthy();
   });
 
-  test('it should not set the disabled class on the host is enabled', () => {
+  test('should not set the disabled class on the host is enabled', () => {
     // Arrange.
     const hostElement = fixture.debugElement;
 
