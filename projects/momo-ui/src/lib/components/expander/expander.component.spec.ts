@@ -55,7 +55,7 @@ describe('ExpanderComponent', () => {
     expect(titleText.innerHTML).toEqual(sampleTitle);
   });
 
-  test('should set the disabled class on the host is disabled', () => {
+  test('should set the disabled class on the host if disabled', () => {
     // Arrange.
     const hostElement = fixture.debugElement;
 
@@ -67,7 +67,7 @@ describe('ExpanderComponent', () => {
     expect(hostElement.classes.disabled).toBeTruthy();
   });
 
-  test('should not set the disabled class on the host is enabled', () => {
+  test('should not set the disabled class on the host if enabled', () => {
     // Arrange.
     const hostElement = fixture.debugElement;
 
