@@ -18,7 +18,7 @@ export default sandboxOf(ExpanderComponent)
   .add('disabled', {
     template: `
     <momo-expander
-        title="Am am disabled"
+        title="I am disabled"
         [disabled]="true"
         icon="../assets/icons/Time.svg">
         <ul>
